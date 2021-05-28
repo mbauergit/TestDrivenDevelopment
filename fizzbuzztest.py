@@ -13,10 +13,15 @@ class testfb(unittest.TestCase):
             if x % 3 == 0 and x % 5 != 0:
                 self.assertEqual(fizzbuzz.fb(x), "Fizz")
 
-    def test_printfizz(self):
+    def test_printbuzz(self):
         for x in range(1, 101):
             if x % 3 != 0 and x % 5 == 0:
                 self.assertEqual(fizzbuzz.fb(x), "Buzz")
+    
+    def test_printfizzbuzz(self):
+        for x in range(1, 101):
+            if x % 3 == 0 and x % 5 == 0:
+                self.assertEqual(fizzbuzz.fb(x), "FizzBuzz")
 
 if __name__ == "__main__":
     unittest.main()
