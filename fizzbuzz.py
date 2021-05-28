@@ -7,3 +7,8 @@ def fb(x):
         return "Buzz"
     else:
         return x
+
+def main():
+    for x in range(1, 101):
+        print(fb(x))
+main()
